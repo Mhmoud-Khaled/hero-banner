@@ -1,0 +1,40 @@
+@import "./variables";
+
+@mixin cabin-medium(
+  $size: var(--fs-4),
+  $color: $color-white,
+  $line-height: 24px
+) {
+  font-family: $font-family-cabin;
+  font-weight: 500;
+  font-size: $size;
+  color: $color;
+  letter-spacing: 0;
+  line-height: $line-height;
+}
+
+@mixin cabin-regular(
+  $size: var(--fs-4),
+  $color: $color-white,
+  $line-height: 24px
+) {
+  font-family: $font-family-cabin;
+  font-weight: 400;
+  font-size: $size;
+  color: $color;
+  letter-spacing: 0;
+  line-height: $line-height;
+}
+
+@mixin cabin-bold(
+  $size: var(--fs-4),
+  $color: $color-white,
+  $line-height: 24px
+) {
+  font-family: $font-family-cabin;
+  font-weight: 600;
+  font-size: $size;
+  color: $color;
+  letter-spacing: 0;
+  line-height: $line-height;
+}

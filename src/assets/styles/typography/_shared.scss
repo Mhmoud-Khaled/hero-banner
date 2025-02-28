@@ -1,0 +1,31 @@
+.fs-1,
+h1 {
+  font-size: calc(var(--font-size) * 3.5);
+}
+
+.fs-2,
+h2 {
+  font-size: calc(var(--font-size) * 2);
+}
+
+.fs-3,
+h3 {
+  font-size: calc(var(--font-size) * 1.375);
+}
+
+.fs-4,
+h4 {
+  font-size: calc(var(--font-size) * 1.25);
+}
+
+.fs-5,
+h5 {
+  font-size: calc(var(--font-size) * 1.125);
+  margin: 0;
+}
+
+.fs-6,
+h6 {
+  font-size: calc(var(--font-size) * 1);
+  margin: 0;
+}

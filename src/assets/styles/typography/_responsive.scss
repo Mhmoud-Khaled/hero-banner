@@ -1,0 +1,29 @@
+@import "./variables";
+
+:root {
+  --font-size: #{map-get($font-sizes, xs)};
+}
+
+@media (min-width: 375px) {
+  :root {
+    --font-size: #{map-get($font-sizes, sm)};
+  }
+}
+
+@media (min-width: 576px) {
+  :root {
+    --font-size: #{map-get($font-sizes, md)};
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --font-size: #{map-get($font-sizes, lg)};
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --font-size: #{map-get($font-sizes, xl)};
+  }
+}

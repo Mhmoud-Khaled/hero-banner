@@ -1,0 +1,33 @@
+// Body Styling
+body,
+html {
+  color: var(--ng-text-color);
+  font-size: var(--font-size);
+  background-color: var(--surface-ground);
+  font-family: var(--font-family);
+
+  // Arabic Language Support
+  &:lang(ar) {
+    line-height: 1.5;
+    direction: rtl;
+  }
+}
+
+// Global Reset
+body,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}

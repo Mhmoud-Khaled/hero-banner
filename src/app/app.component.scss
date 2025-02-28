@@ -1,0 +1,8 @@
+@import "../assets/styles/typography/mixin";
+.header {
+  @include cabin-bold(
+    $size: var(--fs-1),
+    $color: $color-dark-blue,
+    $line-height: 68px
+  );
+}
