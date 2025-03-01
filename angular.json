@@ -43,6 +43,7 @@
                   "maximumError": "4kb"
                 }
               ],
+              "baseHref": "/hero-banner/",
               "outputHashing": "all"
             },
             "development": {
