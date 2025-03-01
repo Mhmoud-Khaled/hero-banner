@@ -8,7 +8,7 @@
 .nav-item {
   position: relative;
   .nav-link {
-    @include cabin-medium(
+    @include text-medium(
       $size: var(--fs-5),
       $color: $color-white !important,
       $line-height: 20px

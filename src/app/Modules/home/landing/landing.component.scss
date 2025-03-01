@@ -1,7 +1,7 @@
 @import "../../../../assets/styles/typography/mixin";
 
 .title {
-  @include cabin-regular(
+  @include text-bold(
     $size: var(--fs-1),
     $color: $color-white !important,
     $line-height: unset
@@ -9,7 +9,7 @@
 }
 
 .description {
-  @include cabin-regular(
+  @include text-regular(
     $size: var(--fs-4),
     $color: $color-white !important,
     $line-height: unset

@@ -1,6 +1,6 @@
 @import "./variables";
 
-@mixin cabin-medium(
+@mixin text-medium(
   $size: var(--fs-4),
   $color: $color-white,
   $line-height: 24px
@@ -12,7 +12,7 @@
   line-height: $line-height;
 }
 
-@mixin cabin-regular(
+@mixin text-regular(
   $size: var(--fs-4),
   $color: $color-white,
   $line-height: 24px
@@ -24,11 +24,7 @@
   line-height: $line-height;
 }
 
-@mixin cabin-bold(
-  $size: var(--fs-4),
-  $color: $color-white,
-  $line-height: 24px
-) {
+@mixin text-bold($size: var(--fs-4), $color: $color-white, $line-height: 24px) {
   font-weight: 600;
   font-size: $size;
   color: $color;
