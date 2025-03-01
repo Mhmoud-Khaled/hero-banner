@@ -1,0 +1,86 @@
+$font-sizes: (
+  "xs": 8px,
+  "sm": 10px,
+  "md": 12px,
+  "lg": 14px,
+  "xl": 16px,
+  "xxl": 16px,
+);
+
+// Colors
+$color-light-blue: #edf8ff;
+$color-teal: #0ed1b3;
+$color-blue: #00b2e2;
+$color-dark-blue: #0055b8;
+$color-darker-blue: #00308c;
+$color-white: #ffffff;
+$color-transparent: transparent;
+
+$font-weight-normal: normal;
+$font-size-20: 20px;
+$letter-spacing-0: 0px;
+$line-height-24: 24px;
+
+@font-face {
+  font-family: "Cabin";
+  font-weight: 400; /* Regular */
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/Cabin-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cabin";
+  font-weight: 500; /* Medium */
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/Cabin-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cabin";
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/Cabin-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cabin";
+  font-weight: 700; /* Bold */
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/Cabin-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Tajawal";
+  font-weight: 400; /* regular */
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/Tajawal-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Tajawal";
+  font-weight: 500; /* medium */
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/Tajawal-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Tajawal";
+  font-weight: 700; /* bold */
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/Tajawal-bold.ttf") format("truetype");
+}
+
+:root {
+  // Font sizes
+  --fs-1: calc(var(--font-size) * 3.5); // 56px
+  --fs-2: calc(var(--font-size) * 2); // 32px
+  --fs-3: calc(var(--font-size) * 1.375); // 22px
+  --fs-4: calc(var(--font-size) * 1.25); // 20px
+  --fs-5: calc(var(--font-size) * 1.125); // 18px
+  --fs-6: calc(var(--font-size) * 1); // 16px
+}

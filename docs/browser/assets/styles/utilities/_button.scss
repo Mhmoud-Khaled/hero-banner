@@ -1,0 +1,31 @@
+@import "../typography/variables";
+
+@mixin button($bg-color, $hover-color, $text-color: $color-white) {
+  background-color: $bg-color;
+  color: $text-color;
+  border-radius: 50rem;
+  border: none;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+.btn-primary {
+  @include button($color-blue, $color-darker-blue);
+}
+
+.btn-light {
+  @include button($color-white, $color-light-blue, $color-dark-blue);
+  &:hover {
+    color: $color-dark-blue;
+  }
+}
+
+.btn-outline-secondary {
+  border-radius: 50rem;
+  border-width: 2px;
+  &:hover {
+    color: $color-white;
+  }
+}

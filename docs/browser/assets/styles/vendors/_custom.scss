@@ -1,0 +1,17 @@
+// Import Bootstrap's functions & variables first
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+$primary: #0055b8;
+$secondary: #00b2e2;
+
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+  )
+);
+
+// Re-import Bootstrap to apply changes
+@import "bootstrap/scss/bootstrap";
