@@ -12,7 +12,7 @@
 }
 
 .btn-primary {
-  @include button($color-blue, $color-dark-blue);
+  @include button($color-blue, $color-darker-blue);
 }
 
 .btn-light {

@@ -9,5 +9,10 @@
     "GET_IN_TOUCH": "Get in touch",
     "SIGN_IN": "Sign In",
     "LANGUAGE": "ع"
+  },
+  "LANDING": {
+    "TITLE_1": "Banner Title!",
+    "DESCRIPTION_1": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+    "MORE_DETAILS": "More Details"
   }
 }
