@@ -1,8 +1,13 @@
 {
   "NAVBAR": {
     "HOME": "الرئيسية",
-    "ABOUT": "معلومات عنا",
-    "CONTACT": "اتصل بنا"
-  },
-  "GREETING": "مرحبًا، أهلاً بك في موقعنا!"
+    "ABOUT_US": "من نحن",
+    "USE_CASES": "حالات الإستخدام",
+    "DEVELOPERS": "المطورين",
+    "COVERAGE": "التغطية",
+    "PRICING": "التسعير",
+    "GET_IN_TOUCH": "تواصل معنا",
+    "SIGN_IN": "حسابي",
+    "LANGUAGE": "E"
+  }
 }

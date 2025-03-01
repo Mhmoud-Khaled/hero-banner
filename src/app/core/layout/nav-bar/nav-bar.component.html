@@ -1,11 +1,100 @@
-<nav>
-  <ul>
-    <li>{{ "NAVBAR.HOME" | translate }}</li>
-    <li>{{ "NAVBAR.ABOUT" | translate }}</li>
-    <li>{{ "NAVBAR.CONTACT" | translate }}</li>
-  </ul>
+<div class="nav-bar bg-primary">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container-fluid">
+        <!-- ---- -->
+        <!-- logo -->
+        <!-- ---- -->
+        <a class="navbar-brand" routerLink="/home">
+          <img src="assets\images\header\logo.png" alt="" />
+        </a>
 
-  <!-- Language Switcher -->
-  <button (click)="switchLanguage('en')">EN</button>
-  <button (click)="switchLanguage('ar')">AR</button>
-</nav>
+        <!-- ------------- -->
+        <!-- toggle button -->
+        <!-- ------------- -->
+        <button
+          class="navbar-toggler border-white shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="assets\images\header\three-bar.svg" alt="" />
+        </button>
+
+        <!-- -------------- -->
+        <!-- collapsible section -->
+        <!-- -------------- -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <!-- ---------- -->
+            <!-- menu items -->
+            <!-- ---------- -->
+            <ul
+              class="navbar-nav flex-grow-1 flex-shrink-0 gap-xl-4 justify-content-center"
+            >
+              @for (item of menuItems; track $index) {
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  [routerLink]="item.path"
+                  routerLinkActive="active"
+                >
+                  {{ item.translationKey | translate }}
+                </a>
+              </li>
+              }
+            </ul>
+
+            <!-- -------------- -->
+            <!-- action buttons -->
+            <!-- -------------- -->
+            <div
+              class="d-flex flex-column flex-lg-row gap-3 align-items-center justify-content-between"
+            >
+              <!-- ------------ -->
+              <!-- Get in touch -->
+              <!-- ------------ -->
+              <button
+                type="button"
+                class="btn btn-outline-secondary px-4 py-1 fs-5 fw-medium"
+              >
+                {{ "NAVBAR.GET_IN_TOUCH" | translate }}
+              </button>
+
+              <!-- -------------- -->
+              <!-- sign in button -->
+              <!-- -------------- -->
+              <button
+                type="button"
+                class="btn btn-light px-4 py-1 fs-5 fw-medium"
+              >
+                {{ "NAVBAR.SIGN_IN" | translate }}
+              </button>
+
+              <!-- ------ -->
+              <!-- search -->
+              <!-- ------ -->
+              <button class="border-0 bg-transparent d-flex align-items-center">
+                <img src="assets\images\header\search.svg" alt="" />
+              </button>
+
+              <!-- -------- -->
+              <!-- language -->
+              <!-- -------- -->
+              <button
+                class="border-0 bg-transparent d-flex align-items-center text-white gap-1"
+                (click)="toggleLanguage()"
+              >
+                <img src="assets\images\header\Globe.svg" alt="" />
+                {{ "NAVBAR.LANGUAGE" | translate }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>

@@ -14,9 +14,8 @@ $color-blue: #00b2e2;
 $color-dark-blue: #0055b8;
 $color-darker-blue: #00308c;
 $color-white: #ffffff;
+$color-transparent: transparent;
 
-// Font Variables
-$font-family-cabin: "Cabin", sans-serif;
 $font-weight-normal: normal;
 $font-size-20: 20px;
 $letter-spacing-0: 0px;
@@ -52,6 +51,28 @@ $line-height-24: 24px;
   font-style: normal;
   font-display: swap;
   src: url("../../fonts/Cabin-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Tajawal";
+  font-weight: 400; /* regular */
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/Tajawal-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Tajawal";
+  font-weight: 500; /* medium */
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/Tajawal-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Tajawal";
+  font-weight: 700; /* bold */
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/Tajawal-bold.ttf") format("truetype");
 }
 
 :root {

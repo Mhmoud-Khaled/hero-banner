@@ -17,4 +17,15 @@
 
 .btn-light {
   @include button($color-white, $color-light-blue, $color-dark-blue);
+  &:hover {
+    color: $color-dark-blue;
+  }
+}
+
+.btn-outline-secondary {
+  border-radius: 50rem;
+  border-width: 2px;
+  &:hover {
+    color: $color-white;
+  }
 }

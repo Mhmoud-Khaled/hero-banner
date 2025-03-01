@@ -1,0 +1,42 @@
+@import "../../../../assets/styles/typography/mixin";
+.navbar-brand {
+  img {
+    width: 100px;
+  }
+}
+
+.nav-item {
+  position: relative;
+  .nav-link {
+    @include cabin-medium(
+      $size: var(--fs-5),
+      $color: $color-white !important,
+      $line-height: 20px
+    );
+    transition: color 0.3s ease-in-out; // Smooth text color transition
+    @media (min-width: 992px) {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        width: 20px;
+        height: 4px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50rem;
+        background-color: $color-blue;
+        opacity: 0;
+        transform: translateX(-50%) scaleX(0);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+      }
+
+      &.active,
+      &:hover {
+        &::after {
+          opacity: 1;
+          transform: translateX(-50%) scaleX(1); // Scale up effect
+        }
+      }
+    }
+  }
+}

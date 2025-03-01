@@ -1,8 +1,13 @@
 {
   "NAVBAR": {
     "HOME": "Home",
-    "ABOUT": "About",
-    "CONTACT": "Contact"
-  },
-  "GREETING": "Hello, welcome to our website!"
+    "ABOUT_US": "About Us",
+    "USE_CASES": "Use Cases",
+    "DEVELOPERS": "Developers",
+    "COVERAGE": "Coverage",
+    "PRICING": "Pricing",
+    "GET_IN_TOUCH": "Get in touch",
+    "SIGN_IN": "Sign In",
+    "LANGUAGE": "ع"
+  }
 }
